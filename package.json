@@ -1,0 +1,23 @@
+{
+  "name": "discord-tone-indicator",
+  "version": "1.0.0",
+  "description": "API server for Discord tone indicator plugin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "deploy": "cp -r ./plugin/* \"/Users/aarong/Library/Application Support/BetterDiscord/plugins/\""
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "axios": "^1.8.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ollama": "^0.5.14",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
